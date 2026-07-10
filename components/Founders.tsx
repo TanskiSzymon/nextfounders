@@ -49,7 +49,7 @@ export function Founders() {
                     alt={`${f.name} — ${f.area}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover grayscale transition-all duration-500 group-hover:scale-[1.02] group-hover:grayscale-0"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                   <div
                     className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent"
