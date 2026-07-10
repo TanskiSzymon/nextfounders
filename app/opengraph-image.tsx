@@ -15,27 +15,26 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 80,
-          backgroundColor: "#0f0f0f",
-          backgroundImage:
-            "radial-gradient(55% 45% at 50% 20%, rgba(0,7,205,0.25), transparent 70%), radial-gradient(35% 30% at 75% 70%, rgba(0,255,255,0.10), transparent 70%)",
-          fontFamily: "sans-serif",
+          backgroundColor: "#F6F2E9",
+          color: "#191713",
+          fontFamily: "serif",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div
             style={{
-              width: 14,
-              height: 14,
+              width: 12,
+              height: 12,
               borderRadius: 9999,
-              backgroundColor: "#00ffff",
+              backgroundColor: "#1B2CC1",
             }}
           />
           <div
             style={{
-              fontSize: 24,
-              letterSpacing: 2,
+              fontSize: 22,
+              letterSpacing: 4,
               textTransform: "uppercase",
-              color: "rgba(255,255,255,0.6)",
+              color: "rgba(25,23,19,0.6)",
             }}
           >
             Niezależna organizacja founderów · Wrocław
@@ -43,14 +42,13 @@ export default function OpenGraphImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 96, color: "#ffffff", lineHeight: 1 }}>
-            Founderzy, którzy
-          </div>
+          <div style={{ fontSize: 92, lineHeight: 1.05 }}>Founderzy, którzy</div>
           <div
             style={{
-              fontSize: 96,
-              color: "rgba(255,255,255,0.6)",
-              lineHeight: 1.1,
+              fontSize: 92,
+              lineHeight: 1.05,
+              fontStyle: "italic",
+              color: "#1B2CC1",
             }}
           >
             faktycznie działają.
@@ -62,15 +60,15 @@ export default function OpenGraphImage() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            borderTop: "1px solid rgba(255,255,255,0.12)",
+            borderTop: "1px solid rgba(25,23,19,0.2)",
             paddingTop: 32,
           }}
         >
-          <div style={{ display: "flex", fontSize: 32, color: "#ffffff" }}>
-            <span style={{ fontWeight: 600 }}>next</span>
-            <span style={{ color: "rgba(255,255,255,0.6)" }}>founders</span>
+          <div style={{ display: "flex", fontSize: 32 }}>
+            NextFounders
+            <span style={{ color: "#1B2CC1" }}>.</span>
           </div>
-          <div style={{ fontSize: 26, color: "rgba(255,255,255,0.5)" }}>
+          <div style={{ fontSize: 24, color: "rgba(25,23,19,0.55)" }}>
             nextfounders.pl
           </div>
         </div>

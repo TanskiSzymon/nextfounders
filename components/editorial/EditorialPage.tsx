@@ -16,11 +16,11 @@ export type TeamVariant = "original" | "rows" | "compact" | "collective";
 
 const SHORT_BIOS: Record<string, string> = {
   "Stanisław Rajm":
-    "Sprzedaż i rozmowy z klientami, zanim powstanie kod. MD Fellowship — 1 z 9 wybranych spośród 400 aplikacji.",
+    "Trzy pierwsze projekty ubił, zanim cokolwiek zarobiły — i z każdego wyciągnął lekcję. Dziś zaczyna od rozmowy z klientem, nie od kodu.",
   "Szymon Tański":
-    "Jego projekty jeżdżą w setkach tysięcy aut w Europie (Bosch). AI/ML, które działa w produkcji.",
+    "Wszystkiego nauczył się, budując — od robota drukującego naleśniki po systemy, które mają działać milion razy bez awarii.",
   "Filip Hanasz":
-    "Były CTO platformy B2B AI wunderloop.de. Latami automatyzował procesy polskich firm.",
+    "Pierwsze automatyzacje składał sam, dla małych firm. Krok po kroku przeszedł drogę od drobnych zleceń do własnych produktów.",
 };
 
 const PRINCIPLES = [
@@ -150,9 +150,9 @@ function TeamCompact() {
       <Reveal>
         <div className="text-center">
           <p className="text-[12px] uppercase tracking-[0.28em] opacity-60">Założyciele</p>
-          <h2 className="mx-auto mt-5 max-w-[560px] font-[family-name:var(--font-fraunces)] text-[32px] leading-[1.1] tracking-tight md:text-[44px]">
-            Trzy komplementarne role,{" "}
-            <em style={{ color: BLUE }}>jeden standard działania</em>.
+          <h2 className="mx-auto mt-5 max-w-[600px] font-[family-name:var(--font-fraunces)] text-[32px] leading-[1.1] tracking-tight md:text-[44px]">
+            Zaczynaliśmy od zera.{" "}
+            <em style={{ color: BLUE }}>Wszystkiego uczyliśmy się sami.</em>
           </h2>
         </div>
       </Reveal>
@@ -180,6 +180,12 @@ function TeamCompact() {
           </Reveal>
         ))}
       </div>
+      <Reveal delay={420}>
+        <p className="mx-auto mt-14 max-w-[520px] text-center font-[family-name:var(--font-fraunces)] text-[18px] italic leading-relaxed opacity-80 md:text-[20px]">
+          Nikt z nas nie zaczynał z gotowym planem ani z plecami. Po prostu
+          zaczęliśmy — i o to samo chodzi w NextFounders.
+        </p>
+      </Reveal>
     </section>
   );
 }
@@ -229,9 +235,9 @@ function TeamCollective() {
                 .
               </p>
               <p className="mt-6 max-w-[560px] text-[15px] leading-relaxed opacity-75">
-                Sami budujemy własne produkty — od systemów w masowej produkcji,
-                przez platformy B2B, po sprzedaż od pierwszej rozmowy. NextFounders
-                to organizacja, jakiej sami potrzebowaliśmy, gdy zaczynaliśmy.
+                Każdy z nas zaczynał od zera i wszystkiego uczył się na własnych
+                projektach. NextFounders to organizacja, jakiej sami
+                potrzebowaliśmy, gdy zaczynaliśmy.
               </p>
             </div>
           </div>
