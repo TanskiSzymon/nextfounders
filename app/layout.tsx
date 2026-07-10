@@ -17,7 +17,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nextfounders.pl"),
   title: {
-    default: "NextFounders — founderzy, którzy działają",
+    default: "NextFounders - founderzy, którzy działają",
     template: "%s · NextFounders",
   },
   description:
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: "https://nextfounders.pl",
     siteName: "NextFounders",
-    title: "NextFounders — founderzy, którzy działają",
+    title: "NextFounders - founderzy, którzy działają",
     description:
       "Niezależna organizacja młodych founderów i founderek, którzy faktycznie budują. Wzajemne wsparcie, wspólny rozwój, ścisła selekcja. Wrocław.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextFounders — founderzy, którzy działają",
+    title: "NextFounders - founderzy, którzy działają",
     description:
       "Niezależna organizacja młodych founderów i founderek, którzy faktycznie budują. Wrocław.",
   },

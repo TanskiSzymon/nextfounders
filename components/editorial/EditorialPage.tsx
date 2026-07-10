@@ -16,9 +16,9 @@ export type TeamVariant = "original" | "rows" | "compact" | "collective";
 
 const SHORT_BIOS: Record<string, string> = {
   "Stanisław Rajm":
-    "Trzy pierwsze projekty ubił, zanim cokolwiek zarobiły — i z każdego wyciągnął lekcję. Dziś zaczyna od rozmowy z klientem, nie od kodu.",
+    "Trzy pierwsze projekty ubił, zanim cokolwiek zarobiły. Z każdego wyciągnął lekcję i dziś zaczyna od rozmowy z klientem, nie od kodu.",
   "Szymon Tański":
-    "Wszystkiego nauczył się, budując — od robota drukującego naleśniki po systemy, które mają działać milion razy bez awarii.",
+    "Wszystkiego nauczył się, budując: od robota drukującego naleśniki po systemy, które mają działać milion razy bez awarii.",
   "Filip Hanasz":
     "Pierwsze automatyzacje składał sam, dla małych firm. Krok po kroku przeszedł drogę od drobnych zleceń do własnych produktów.",
 };
@@ -27,12 +27,12 @@ const PRINCIPLES = [
   {
     n: "01",
     title: "Budujesz, więc jesteś",
-    body: "W NextFounders nie ma obserwatorów. Każda osoba w organizacji prowadzi własny projekt — produkt, firmę, coś, co realnie istnieje i się rozwija.",
+    body: "W NextFounders nie ma obserwatorów. Każda osoba w organizacji prowadzi własny projekt: produkt, firmę, coś, co realnie istnieje i się rozwija.",
   },
   {
     n: "02",
     title: "Dajesz tyle, ile bierzesz",
-    body: "Kontakty, wiedza, feedback, popełnione błędy — dzielimy się wszystkim, co skraca drogę innym. Wsparcie działa, bo płynie w obie strony.",
+    body: "Kontakty, wiedza, feedback, popełnione błędy. Dzielimy się wszystkim, co skraca drogę innym, bo wsparcie działa tylko wtedy, gdy płynie w obie strony.",
   },
   {
     n: "03",
@@ -55,7 +55,7 @@ const STEPS = [
   {
     n: "3",
     title: "Decyzja",
-    body: "Jeśli jest dopasowanie — dołączasz. Jeśli jeszcze nie, mówimy wprost dlaczego. Drzwi zostają otwarte.",
+    body: "Jeśli jest dopasowanie, dołączasz. Jeśli jeszcze nie, mówimy wprost dlaczego. Drzwi zostają otwarte.",
   },
 ];
 
@@ -77,7 +77,7 @@ function TeamOriginal() {
               <div className="relative aspect-[3/4] overflow-hidden rounded-[2px]">
                 <Image
                   src={f.photo}
-                  alt={`${f.name} — ${f.area}`}
+                  alt={`${f.name}, ${f.area}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -99,7 +99,7 @@ function TeamOriginal() {
   );
 }
 
-/* A — masthead rows: small square photos, editorial imprint feel */
+/* A - masthead rows: small square photos, editorial imprint feel */
 function TeamRows() {
   return (
     <section id="ludzie" className="mx-auto w-full max-w-[1200px] px-6 pb-24 md:px-10 md:pb-32">
@@ -143,7 +143,7 @@ function TeamRows() {
   );
 }
 
-/* B — compact centered columns with circular portraits */
+/* B - compact centered columns with circular portraits */
 function TeamCompact() {
   return (
     <section id="ludzie" className="mx-auto w-full max-w-[1200px] px-6 pb-24 md:px-10 md:pb-32">
@@ -170,10 +170,7 @@ function TeamCompact() {
                 />
               </div>
               <h3 className="mt-5 font-[family-name:var(--font-fraunces)] text-[21px]">{f.name}</h3>
-              <p className="mt-1.5 text-[11px] uppercase tracking-[0.18em]" style={{ color: BLUE }}>
-                {f.area}
-              </p>
-              <p className="mx-auto mt-3 max-w-[240px] text-[14px] leading-relaxed opacity-70">
+              <p className="mx-auto mt-3 max-w-[250px] text-[14px] leading-relaxed opacity-70">
                 {SHORT_BIOS[f.name]}
               </p>
             </article>
@@ -183,14 +180,14 @@ function TeamCompact() {
       <Reveal delay={420}>
         <p className="mx-auto mt-14 max-w-[520px] text-center font-[family-name:var(--font-fraunces)] text-[18px] italic leading-relaxed opacity-80 md:text-[20px]">
           Nikt z nas nie zaczynał z gotowym planem ani z plecami. Po prostu
-          zaczęliśmy — i o to samo chodzi w NextFounders.
+          zaczęliśmy. I o to samo chodzi w NextFounders.
         </p>
       </Reveal>
     </section>
   );
 }
 
-/* C — collective paragraph, tiny avatar cluster, most understated */
+/* C - collective paragraph, tiny avatar cluster, most understated */
 function TeamCollective() {
   return (
     <section id="ludzie" className="mx-auto w-full max-w-[1200px] px-6 pb-24 md:px-10 md:pb-32">
@@ -289,7 +286,7 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
         <section className="mx-auto w-full max-w-[1200px] px-6 pb-16 pt-16 md:px-10 md:pt-24">
           <Reveal>
             <p className="text-[12px] uppercase tracking-[0.28em] opacity-60">
-              Niezależna organizacja founderów — Wrocław
+              Niezależna organizacja founderów · Wrocław
             </p>
           </Reveal>
           <Reveal delay={140}>
@@ -308,7 +305,7 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
             <div className="mt-12 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
               <p className="max-w-[520px] text-[17px] leading-relaxed opacity-80">
                 NextFounders zrzesza młodych founderów i founderki, którzy
-                budują realne produkty — nie kolekcjonują pomysłów. Wspieramy
+                budują realne produkty, nie kolekcjonują pomysłów. Wspieramy
                 się nawzajem, dzielimy wiedzą i rozwijamy szybciej, niż
                 zrobiłby to każdy z nas osobno.
               </p>
@@ -332,7 +329,7 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
             <div className="overflow-hidden rounded-[2px]">
               <Image
                 src="/art/v1-art.jpg"
-                alt="Abstrakcyjna kompozycja — organiczne kształty w kolorach niebieskim i pomarańczowym"
+                alt="Abstrakcyjna kompozycja: organiczne kształty w kolorach niebieskim i pomarańczowym"
                 width={2000}
                 height={857}
                 priority
@@ -395,7 +392,7 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
                 </Reveal>
                 <Reveal delay={140}>
                   <p className="mt-6 max-w-[440px] text-[16px] leading-relaxed opacity-75">
-                    Siła grupy zależy od tego, kto w niej jest — dlatego każdą
+                    Siła grupy zależy od tego, kto w niej jest, dlatego każdą
                     aplikację rozpatrujemy indywidualnie. Nie szukamy idealnych
                     CV. Szukamy ludzi, którzy działają.
                   </p>
@@ -403,9 +400,9 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
                 <Reveal delay={240}>
                   <ul className="mt-10 space-y-4">
                     {[
-                      "Budujesz coś realnego — produkt, firmę, projekt.",
+                      "Budujesz coś realnego: produkt, firmę, projekt.",
                       "Dowozisz. Liczy się zrobione, nie zaplanowane.",
-                      "Dajesz od siebie — wiedzę, kontakty, czas.",
+                      "Dajesz od siebie: wiedzę, kontakty, czas.",
                       "Regularnie pojawiasz się we Wrocławiu.",
                     ].map((c) => (
                       <li key={c} className="flex gap-3 text-[15px] leading-relaxed">

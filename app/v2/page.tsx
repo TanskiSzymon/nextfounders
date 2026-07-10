@@ -18,7 +18,7 @@ const grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Wersja 2 — Neo-Brutal",
+  title: "Wersja 2 - Neo-Brutal",
   robots: { index: false, follow: false },
 };
 
@@ -39,13 +39,13 @@ const PRINCIPLES = [
     n: "01",
     color: LIME,
     title: "Budujesz, więc jesteś",
-    body: "Nie ma obserwatorów. Każda osoba w NextFounders prowadzi własny projekt — coś, co realnie istnieje i się rozwija.",
+    body: "Nie ma obserwatorów. Każda osoba w NextFounders prowadzi własny projekt, coś, co realnie istnieje i się rozwija.",
   },
   {
     n: "02",
     color: BLUE,
     title: "Dajesz tyle, ile bierzesz",
-    body: "Kontakty, wiedza, feedback, błędy — dzielimy się wszystkim, co skraca drogę innym. Wsparcie płynie w obie strony.",
+    body: "Kontakty, wiedza, feedback, błędy, dzielimy się wszystkim, co skraca drogę innym. Wsparcie płynie w obie strony.",
   },
   {
     n: "03",
@@ -58,7 +58,7 @@ const PRINCIPLES = [
 const STEPS = [
   { n: "1", title: "Aplikacja", body: "Kilka zdań: kim jesteś, co budujesz, na jakim etapie. Bez formularzy, bez CV." },
   { n: "2", title: "Rozmowa", body: "Na żywo we Wrocławiu albo online. Pokaż, jak myślisz i co faktycznie zrobiłeś." },
-  { n: "3", title: "Decyzja", body: "Pasujesz — wchodzisz. Nie tym razem — mówimy wprost dlaczego i drzwi zostają otwarte." },
+  { n: "3", title: "Decyzja", body: "Pasujesz, wchodzisz. Nie tym razem, mówimy wprost dlaczego i drzwi zostają otwarte." },
 ];
 
 function MarqueeStrip() {
@@ -218,7 +218,7 @@ export default function V2() {
                     <div className="relative aspect-[3/4] overflow-hidden border-b-2 border-black">
                       <Image
                         src={f.photo}
-                        alt={`${f.name} — ${f.area}`}
+                        alt={`${f.name}, ${f.area}`}
                         fill
                         sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover"
@@ -260,15 +260,15 @@ export default function V2() {
               <Reveal delay={140}>
                 <p className="mt-6 max-w-[440px] text-[16px] font-medium leading-relaxed">
                   Siła grupy zależy od tego, kto w niej jest. Nie szukamy
-                  idealnych CV — szukamy ludzi, którzy działają:
+                  idealnych CV, szukamy ludzi, którzy działają:
                 </p>
               </Reveal>
               <Reveal delay={240}>
                 <ul className="mt-8 space-y-3">
                   {[
-                    "Budujesz coś realnego — produkt, firmę, projekt.",
+                    "Budujesz coś realnego, produkt, firmę, projekt.",
                     "Dowozisz. Liczy się zrobione, nie zaplanowane.",
-                    "Dajesz od siebie — wiedzę, kontakty, czas.",
+                    "Dajesz od siebie, wiedzę, kontakty, czas.",
                     "Regularnie pojawiasz się we Wrocławiu.",
                   ].map((c) => (
                     <li key={c} className="flex items-start gap-3 text-[15px] font-medium leading-relaxed">

@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Wersja 3 — Klub",
+  title: "Wersja 3 - Klub",
   robots: { index: false, follow: false },
 };
 
@@ -24,12 +24,12 @@ const PRINCIPLES = [
   {
     n: "I",
     title: "Budujesz, więc jesteś",
-    body: "W NextFounders nie ma obserwatorów. Każda osoba prowadzi własny projekt — coś, co realnie istnieje i się rozwija.",
+    body: "W NextFounders nie ma obserwatorów. Każda osoba prowadzi własny projekt, coś, co realnie istnieje i się rozwija.",
   },
   {
     n: "II",
     title: "Dajesz tyle, ile bierzesz",
-    body: "Kontakty, wiedza, feedback, popełnione błędy — dzielimy się wszystkim, co skraca drogę innym.",
+    body: "Kontakty, wiedza, feedback, popełnione błędy, dzielimy się wszystkim, co skraca drogę innym.",
   },
   {
     n: "III",
@@ -40,8 +40,8 @@ const PRINCIPLES = [
 
 const STEPS = [
   { n: "1", title: "Aplikacja", body: "Kilka zdań o sobie i o tym, co budujesz. Bez formularzy, bez CV." },
-  { n: "2", title: "Rozmowa", body: "We Wrocławiu albo online — chcemy zobaczyć, jak myślisz i co zrobiłeś." },
-  { n: "3", title: "Decyzja", body: "Dopasowanie — dołączasz. Jeszcze nie — mówimy wprost dlaczego." },
+  { n: "2", title: "Rozmowa", body: "We Wrocławiu albo online, chcemy zobaczyć, jak myślisz i co zrobiłeś." },
+  { n: "3", title: "Decyzja", body: "Dopasowanie, dołączasz. Jeszcze nie, mówimy wprost dlaczego." },
 ];
 
 function Divider() {
@@ -231,7 +231,7 @@ export default function V3() {
                     >
                       <Image
                         src={f.photo}
-                        alt={`${f.name} — ${f.area}`}
+                        alt={`${f.name}, ${f.area}`}
                         fill
                         sizes="(max-width: 768px) 100vw, 300px"
                         className="object-cover transition-transform duration-700 hover:scale-[1.04]"
@@ -281,7 +281,7 @@ export default function V3() {
             <Reveal delay={220}>
               <p className="mx-auto mt-8 max-w-[540px] text-[15px] leading-[1.9] opacity-75">
                 Siła grupy zależy od tego, kto w niej jest. Nie szukamy
-                idealnych CV — szukamy ludzi, którzy budują coś realnego,
+                idealnych CV, szukamy ludzi, którzy budują coś realnego,
                 dowożą, dają od siebie i są w stanie regularnie pojawiać się we
                 Wrocławiu.
               </p>
