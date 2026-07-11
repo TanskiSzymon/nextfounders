@@ -378,6 +378,33 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
         {/* Team */}
         <TeamSection />
 
+        {/* Partners */}
+        <section id="partnerzy" className="mx-auto w-full max-w-[1200px] px-6 pb-24 md:px-10 md:pb-32">
+          <Reveal>
+            <div className="grid gap-6 border-t border-[#191713]/15 pt-10 md:grid-cols-[120px_1fr_1.2fr] md:gap-10">
+              <span className="text-[12px] uppercase tracking-[0.2em] opacity-50">
+                Partnerzy
+              </span>
+              <a
+                href="https://odysai.pl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-baseline gap-2 font-[family-name:var(--font-fraunces)] text-[26px] leading-tight transition-colors hover:text-[#1B2CC1] md:text-[30px]"
+              >
+                OdysAI
+                <span className="text-[16px] opacity-50 transition-all group-hover:translate-x-0.5 group-hover:opacity-100">
+                  ↗
+                </span>
+              </a>
+              <p className="text-[15px] leading-relaxed opacity-75">
+                Studencka grupa badawcza applied AI działająca przy Politechnice
+                Wrocławskiej. Razem łączymy wrocławskie środowiska founderów i
+                badaczy AI.
+              </p>
+            </div>
+          </Reveal>
+        </section>
+
         {/* Selection */}
         <section id="selekcja" className="border-y border-[#191713]/15 bg-[#EFE9DC]">
           <div className="mx-auto w-full max-w-[1200px] px-6 py-24 md:px-10 md:py-32">
