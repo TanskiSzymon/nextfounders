@@ -18,7 +18,7 @@ const SHORT_BIOS: Record<string, string> = {
   "Stanisław Rajm":
     "Trzy pierwsze projekty ubił, zanim cokolwiek zarobiły. Z każdego wyciągnął lekcję i dziś zaczyna od rozmowy z klientem, nie od kodu.",
   "Szymon Tański":
-    "Wszystkiego nauczył się, budując: od robota drukującego naleśniki po systemy, które mają działać milion razy bez awarii.",
+    "Wszystkiego nauczył się, budując: od robota drukującego naleśniki po systemy, które po prostu muszą działać.",
   "Filip Hanasz":
     "Pierwsze automatyzacje składał sam, dla małych firm. Krok po kroku przeszedł drogę od drobnych zleceń do własnych produktów.",
 };
@@ -151,8 +151,8 @@ function TeamCompact() {
         <div className="text-center">
           <p className="text-[12px] uppercase tracking-[0.28em] opacity-60">Założyciele</p>
           <h2 className="mx-auto mt-5 max-w-[600px] font-[family-name:var(--font-fraunces)] text-[32px] leading-[1.1] tracking-tight md:text-[44px]">
-            Zaczynaliśmy od zera.{" "}
-            <em style={{ color: BLUE }}>Wszystkiego uczyliśmy się sami.</em>
+            Zaczęliśmy to miejsce,{" "}
+            <em style={{ color: BLUE }}>bo sami go potrzebowaliśmy.</em>
           </h2>
         </div>
       </Reveal>
@@ -178,9 +178,9 @@ function TeamCompact() {
         ))}
       </div>
       <Reveal delay={420}>
-        <p className="mx-auto mt-14 max-w-[520px] text-center font-[family-name:var(--font-fraunces)] text-[18px] italic leading-relaxed opacity-80 md:text-[20px]">
-          Nikt z nas nie zaczynał z gotowym planem ani z plecami. Po prostu
-          zaczęliśmy. I o to samo chodzi w NextFounders.
+        <p className="mx-auto mt-14 max-w-[540px] text-center font-[family-name:var(--font-fraunces)] text-[18px] italic leading-relaxed opacity-80 md:text-[20px]">
+          Ale NextFounders to nie my trzej. To każda kolejna osoba, która
+          dołącza i pcha swój projekt do przodu.
         </p>
       </Reveal>
     </section>
@@ -304,10 +304,10 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
           <Reveal delay={280}>
             <div className="mt-12 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
               <p className="max-w-[520px] text-[17px] leading-relaxed opacity-80">
-                NextFounders zrzesza młodych founderów i founderki, którzy
-                budują realne produkty, nie kolekcjonują pomysłów. Wspieramy
-                się nawzajem, dzielimy wiedzą i rozwijamy szybciej, niż
-                zrobiłby to każdy z nas osobno.
+                NextFounders to społeczność młodych founderów i founderek,
+                którzy budują realne rzeczy. Najwięcej dzieje się między
+                ludźmi: wiedza, kontakty i szczery feedback krążą w obie
+                strony, a każdy rozwija się szybciej niż w pojedynkę.
               </p>
               <a
                 href="#kontakt"
@@ -355,7 +355,13 @@ export function EditorialPage({ team }: { team: TeamVariant }) {
               </span>
             </div>
           </Reveal>
-          <div>
+          <Reveal delay={120}>
+            <p className="mt-8 max-w-[620px] text-[16px] leading-relaxed opacity-75">
+              O sile NextFounders nie decydujemy my, tylko ludzie, którzy tu
+              są. Te trzy rzeczy sprawiają, że warto być wśród nich.
+            </p>
+          </Reveal>
+          <div className="mt-4">
             {PRINCIPLES.map((p, i) => (
               <Reveal key={p.n} delay={i * 120}>
                 <div className="grid gap-4 border-b border-[#191713]/15 py-10 md:grid-cols-[120px_1fr_1.2fr] md:gap-10">
